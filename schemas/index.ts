@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import task from './task'
+
+export const schemaTypes = [task]
