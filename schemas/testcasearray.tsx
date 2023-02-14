@@ -3,13 +3,13 @@ import {defineField} from 'sanity'
 
 // Render a div that wraps the default preview component
 
-export const arrayOfObjects = defineField({
+export const testcasearray = defineField({
     name: 'testCases',
     title: 'Test',
     type: 'array',
     of: [
       {
-        type: 'document',
+        type: 'object',
         name: 'case',
         title: 'Test Case',
         fieldsets: [
@@ -40,18 +40,8 @@ export const arrayOfObjects = defineField({
             type: 'text',
             fieldset: 'testcases'
           }
-        ],
-        preview: {
-          select: {
-            title: 'testcaseinput',
-          },
-          prepare: ({title}) => {
-            return {
-              title
-            }
-          }
-        }
+        ]
       }
-    ]
+    ],
   }
 )
