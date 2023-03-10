@@ -3,7 +3,7 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {taskStructure} from './deckStructure'
-import {HelloWorldAction} from './schemas/action'
+import {TestTask} from './schemas/action'
 
 export default defineConfig({
   name: 'default',
@@ -16,7 +16,7 @@ export default defineConfig({
     structure: taskStructure
   }), visionTool()],
   document: {
-    actions: [HelloWorldAction],
+    actions: [TestTask],
   },
 
   schema: {
