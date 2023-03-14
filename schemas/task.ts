@@ -1,6 +1,7 @@
 import {testcasearray} from './testcasearray'
 import {rewardarray} from './rewardarray'
 import {difficultyarray} from './difficultyarray'
+import {categoryArray} from './categoryarray'
 
 export default {
   name: 'task',
@@ -42,19 +43,7 @@ export default {
     },
     rewardarray,
     difficultyarray,
-    {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-      options: {
-        list: [
-          {'title': 'Category1', 'value': 'category1'},
-          {'title': 'Category2', 'value': 'category2'},
-          {'title': 'Category3', 'value': 'category3'}
-        ],
-        layout: 'dropdown'
-      }
-    }
+    categoryArray
 
   ]
 }
