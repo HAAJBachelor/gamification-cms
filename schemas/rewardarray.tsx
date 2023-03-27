@@ -25,8 +25,6 @@ export const rewardarray = defineField({
               list: [
                 {'title': 'Time', 'value': 'time'},
                 {'title': 'Lives', 'value': 'live'},
-                {'title': 'Points', 'value': 'points'}
-                // ...
               ],
               layout: 'dropdown'
             }

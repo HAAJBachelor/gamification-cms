@@ -42,6 +42,11 @@ export default {
       title: 'Code Stub'
     },
     rewardarray,
+    {
+      name: 'score',
+      type: 'number',
+      title: 'Score'
+    },
     difficultyarray,
     categoryArray
 
